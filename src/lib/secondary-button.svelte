@@ -1,0 +1,1 @@
+<div class="secondary rounded p-2 font-bold"><slot/></div>

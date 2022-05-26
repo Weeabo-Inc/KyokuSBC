@@ -1,0 +1,1 @@
+<div class="primary rounded p-2 cursor-pointer hover:brightness-110 m-2 font-bold"><slot/></div>
