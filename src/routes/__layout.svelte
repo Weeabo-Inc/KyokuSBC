@@ -1,36 +1,24 @@
 <script>
-	import Layered from "$lib/svg/layered-peaks-haikei.svg"
-	import PrimaryButton from "$lib/primary-button.svelte";
-	
-	import '../app.css';
-import SecondaryButton from "$lib/secondary-button.svelte";
+	import './../app.css';
+
 </script>
-<svelte:head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</svelte:head>
-<div
-	class="overlay static mx-auto grid grid-cols-1 items-center justify-center gap-2 p-6 shadow-lg sm:flex sm:justify-between md:gap-0"
->
-	<div class="items-center justify-center gap-2 sm:flex">
-		<a href="/"
-			><div
-				class="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-center text-3xl font-extrabold text-transparent"
-			>
-				Kyoku SBC
-			</div></a
-		>
-		<div class="ml-5 flex items-center justify-center gap-5">
-			<a href="/"><div class="hover:underline">Home</div> </a>
-			<a href="/shop"><div class="hover:underline">Store</div> </a>
-			<a href="/"><div class="hover:underline">Forum</div> </a>
-			<a href="/"><div class="hover:underline">More</div> </a>
-		</div>
+
+<div class="items-center justify-around bg-white p-4 shadow sm:flex">
+	<a href="/"><div class="text-center text-2xl font-extrabold antialiased">KyokuSBC</div></a>
+	<div class="flex items-center justify-center gap-3">
+		<a href="/" class="hover:underline">Homepage</a>
+		<a href="/shop" class="hover:underline	">Shop</a>
+		<a href="/" class="hover:underline">Users</a>
+		<a href="/" class="hover:underline">More</a>
 	</div>
-	<div class="flex items-center justify-center gap-2">
-		<a href="/login"><PrimaryButton>Login</PrimaryButton></a>
-		<a href="/register"><SecondaryButton>Register</SecondaryButton></a>
+	<div class="flex items-center justify-center gap-3">
+		<a href="/login"
+			><div class=" border border-black px-2 py-1 hover:bg-black hover:text-white">Login</div></a
+		>
+		<a href="/register"
+			><div class=" border border-black px-2 py-1 hover:bg-black hover:text-white">Register</div></a
+		>
 	</div>
 </div>
-	<slot />
 
-<img src={Layered} class="sticky -z-10 w-screen bottom-0 h-screen object-cover" alt="">
+<slot />
