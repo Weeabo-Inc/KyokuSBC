@@ -1,1 +1,1 @@
-<div class="bg-black hover:text-black hover:bg-white border border-black hover:z-50 text-white  p-2 cursor-pointer  m-0.5 "><slot/></div>
+<div class="secondary    rounded hover:z-50 text-white  p-2 cursor-pointer  m-0.5 "><slot/></div>
